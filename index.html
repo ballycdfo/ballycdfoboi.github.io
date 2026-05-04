@@ -37,7 +37,17 @@ body::before{
 .avatar-sub{font-family:'Share Tech Mono',monospace;font-size:0.55rem;color:var(--cyan);letter-spacing:2px;}
 
 .scan-bar{position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--cyan),transparent);animation:scanDown 3.5s ease-in-out infinite;border-radius:2px;}
-@keyframes scanDown{0%{top:0;opacity:1;}100%{top:100%;opacity:0;}}
+.scan-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--cyan), transparent);
+    animation: scan 3s ease-in-out infinite;
+    border-radius: 2px;
+}
+  @keyframes scanDown{0%{top:0;opacity:1;}100%{top:100%;opacity:0;}}
 
 .hero-name{font-family:'Orbitron',monospace;font-size:1.9rem;font-weight:900;letter-spacing:2px;color:var(--gold2);margin-bottom:0.35rem;text-shadow:0 0 30px rgba(240,192,64,0.25);}
 .hero-role{font-family:'Share Tech Mono',monospace;font-size:0.78rem;color:var(--cyan);letter-spacing:4px;margin-bottom:0.3rem;}
