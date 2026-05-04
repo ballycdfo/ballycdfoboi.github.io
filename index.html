@@ -138,7 +138,50 @@ body::before{
 <div class="hero">
   <div class="avatar-wrap">
     <div class="avatar-ring">
-      <div class="scan-bar"></div>
+      <div class="badge-ring">
+    <div class="scan-line"></div>
+    <svg class="badge-svg" viewBox="0 0 140 140">
+      <defs>
+        <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#1a2444"></stop>
+          <stop offset="100%" stop-color="#0a0f1e"></stop>
+        </radialGradient>
+        <radialGradient id="gold-grd" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#f0c040"></stop>
+          <stop offset="100%" stop-color="#c9a227"></stop>
+        </radialGradient>
+      </defs>
+      <!-- Outer ring -->
+      <circle cx="70" cy="70" r="66" fill="none" stroke="#c9a227" stroke-width="2.5" stroke-dasharray="8 4"></circle>
+      <!-- Mid ring -->
+      <circle cx="70" cy="70" r="58" fill="url(#bg)" stroke="#c9a227" stroke-width="1.5"></circle>
+      <!-- Inner decoration -->
+      <circle cx="70" cy="70" r="48" fill="none" stroke="rgba(0,212,255,0.4)" stroke-width="1"></circle>
+      <!-- Star burst -->
+      <g transform="translate(70,70)">
+        <line x1="0" y1="-54" x2="0" y2="54" stroke="rgba(201,162,39,0.2)" stroke-width="0.5"></line>
+        <line x1="-54" y1="0" x2="54" y2="0" stroke="rgba(201,162,39,0.2)" stroke-width="0.5"></line>
+        <line x1="-38" y1="-38" x2="38" y2="38" stroke="rgba(201,162,39,0.15)" stroke-width="0.5"></line>
+        <line x1="38" y1="-38" x2="-38" y2="38" stroke="rgba(201,162,39,0.15)" stroke-width="0.5"></line>
+      </g>
+      <!-- Shield -->
+      <path d="M70 28 L88 36 L88 58 Q88 75 70 84 Q52 75 52 58 L52 36 Z" fill="rgba(201,162,39,0.12)" stroke="#c9a227" stroke-width="1.5"></path>
+      <!-- Ashoka emblem simplified -->
+      <circle cx="70" cy="58" r="10" fill="none" stroke="#f0c040" stroke-width="1.5"></circle>
+      <line x1="70" y1="48" x2="70" y2="68" stroke="#f0c040" stroke-width="1.5"></line>
+      <line x1="60" y1="58" x2="80" y2="58" stroke="#f0c040" stroke-width="1.5"></line>
+      <circle cx="70" cy="58" r="2.5" fill="#f0c040"></circle>
+      <!-- Text: PBI -->
+      <text x="70" y="78" text-anchor="middle" font-family="Orbitron,monospace" font-size="8" font-weight="900" fill="#f0c040" letter-spacing="3">PBI</text>
+      <!-- Stars at top -->
+      <text x="70" y="42" text-anchor="middle" font-size="6" fill="#f0c040">★</text>
+      <!-- Bottom arc text -->
+      <path id="arc" d="M 30,70 A 40,40 0 0,0 110,70" fill="none"></path>
+      <text font-family="Rajdhani,sans-serif" font-size="6" fill="#c9a227" letter-spacing="1.5">
+        <textPath href="#arc" startOffset="10%">DIGITAL FORENSICS</textPath>
+      </text>
+    </svg>
+  </div>
       <div class="avatar-inner">
         <span class="avatar-initials">BS</span>
         <span class="avatar-sub">CDFO</span>
